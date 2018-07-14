@@ -1,5 +1,4 @@
 var name_util = require("./Name_util.js");
-
 var user = new name_util();
 
 
@@ -11,7 +10,7 @@ describe('angularjs homepage', function () {
 
     var greeting = element(by.binding('yourName'));
 
-    expect(greeting.getText()).toEqual('Hello Julie!');
+      expect(greeting.getText()).toEqual('Hello ' + user._name + '!');
   });
 
   describe('todo list', function() {
