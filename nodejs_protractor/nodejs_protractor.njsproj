@@ -38,6 +38,9 @@
     <Content Include="tsconfig.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Name_util.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="conf.js">
       <SubType>Code</SubType>
     </Compile>
