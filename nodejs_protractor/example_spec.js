@@ -1,19 +1,20 @@
-var name_util = require("./Name_util.js");
+var name_util = require('./utils/Name_util.js');
 var user = new name_util();
+
+var home_page = require('./pages/home_page.js');
+
+
 
 
 describe('angularjs homepage', function () {
-  it('should greet the named user', function() {
-    browser.get('http://www.angularjs.org');
-
-      element(by.model('yourName')).sendKeys(user._name);
-
-    var greeting = element(by.binding('yourName'));
-
-      expect(greeting.getText()).toEqual('Hello ' + user._name + '!');
+    it('should greet the named user', function () {
+        home_page.get();
+        home_page.setName('Julie');
+        //var greeting = home_page.getGreetingText();
+        expect(home_page.getGreetingText()).toEqual('Hello ' + user._name + '!');
   });
 
-  describe('todo list', function() {
+  xdescribe('todo list', function() {
     var todoList;
 
     beforeEach(function() {
