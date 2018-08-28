@@ -7,7 +7,7 @@ exports.config = {
 
     // Capabilities to be passed to the webdriver instance. 
     capabilities: {
-        'browserName': 'chrome',
+        'browserName': 'chrome'
        
     },
 
@@ -21,6 +21,7 @@ exports.config = {
         defaultTimeoutInterval: 30000
     
     },
+
 
     onPrepare: function () {
         jasmine.getEnv().addReporter(
