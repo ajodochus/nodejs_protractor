@@ -7,6 +7,7 @@ var home_page = function () {
     };
 
     this.setName = function (name) {
+        
         nameInput.sendKeys(name);
     };
 

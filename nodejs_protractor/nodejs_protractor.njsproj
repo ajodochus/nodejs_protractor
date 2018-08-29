@@ -39,6 +39,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="pages\home_page.js" />
+    <Compile Include="pages\Top_navigation_page.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="utils\Name_util.js">
       <SubType>Code</SubType>
     </Compile>
@@ -47,6 +50,9 @@
     </Compile>
     <Compile Include="example_spec.js" />
     <Compile Include="todo.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="webelement_spec.js">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

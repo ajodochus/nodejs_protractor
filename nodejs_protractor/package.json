@@ -7,6 +7,7 @@
     "name": "Bernd.Wissmeier"
   },
   "devDependencies": {
-    "@types/node": "^6.0.87"
+    "@types/node": "^6.0.87",
+    "protractor-jasmine2-html-reporter": "0.0.7"
   }
 }
